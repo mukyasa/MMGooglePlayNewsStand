@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5561F4AA1B8C3DC700486A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4A91B8C3DC700486A57 /* AppDelegate.swift */; };
+		5561F4AC1B8C3DC700486A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4AB1B8C3DC700486A57 /* ViewController.swift */; };
+		5561F4AF1B8C3DC700486A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4AD1B8C3DC700486A57 /* Main.storyboard */; };
+		5561F4B11B8C3DC700486A57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4B01B8C3DC700486A57 /* Images.xcassets */; };
+		5561F4B41B8C3DC700486A57 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4B21B8C3DC700486A57 /* LaunchScreen.xib */; };
+		5561F4C01B8C3DC700486A57 /* MMGooglePlayNewsStandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4BF1B8C3DC700486A57 /* MMGooglePlayNewsStandTests.swift */; };
+		5561F4CA1B8C3DF800486A57 /* MMPlayStandPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4C91B8C3DF800486A57 /* MMPlayStandPageViewController.swift */; };
+		5561F4D01B8C3E7B00486A57 /* UIColor+HexRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4CD1B8C3E7B00486A57 /* UIColor+HexRepresentation.m */; };
+		5561F4D11B8C3E7B00486A57 /* UIView+MaterialDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4CF1B8C3E7B00486A57 /* UIView+MaterialDesign.m */; };
+		5561F4D41B8C3EC300486A57 /* MMSampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4D31B8C3EC300486A57 /* MMSampleTableViewController.swift */; };
+		5561F4D71B8C448C00486A57 /* bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4D61B8C448C00486A57 /* bg@2x.jpg */; };
+		5561F4DB1B8C44A100486A57 /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4D81B8C44A100486A57 /* demo.png */; };
+		5561F4DC1B8C44A100486A57 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4D91B8C44A100486A57 /* menu.png */; };
+		5561F4DD1B8C44A100486A57 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4DA1B8C44A100486A57 /* search.png */; };
+		5561F4E01B8C48A900486A57 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4DF1B8C48A900486A57 /* news.png */; };
+		5561F4E31B8C4DBD00486A57 /* JBKenBurnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4E21B8C4DBD00486A57 /* JBKenBurnsView.m */; };
+		5561F4E51B8C544E00486A57 /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4E41B8C544E00486A57 /* sports.png */; };
+		5561F4E71B8C546E00486A57 /* business.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4E61B8C546E00486A57 /* business.png */; };
+		5561F4E91B8C548300486A57 /* tech.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4E81B8C548300486A57 /* tech.png */; };
+		5561F4EB1B8C54AB00486A57 /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4EA1B8C54AB00486A57 /* movie.png */; };
+		5561F4ED1B8C54C900486A57 /* world.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4EC1B8C54C900486A57 /* world.png */; };
+		5561F4F11B8C577A00486A57 /* highlights.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4F01B8C577A00486A57 /* highlights.png */; };
+		5561F4F61B8C617E00486A57 /* applebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4F21B8C617E00486A57 /* applebg.png */; };
+		5561F4F81B8C617E00486A57 /* sportsbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4F41B8C617E00486A57 /* sportsbg.jpg */; };
+		5561F4F91B8C617E00486A57 /* worldbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4F51B8C617E00486A57 /* worldbg.jpg */; };
+		5561F4FB1B8C61D200486A57 /* ironman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4FA1B8C61D200486A57 /* ironman.jpg */; };
+		5561F4FD1B8C7B5300486A57 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4FC1B8C771D00486A57 /* Roboto-Medium.ttf */; };
+		5561F4FF1B8C885600486A57 /* NewsCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4FE1B8C885600486A57 /* NewsCellTableViewCell.swift */; };
+		5561F5011B8C911100486A57 /* businessbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5561F5001B8C911100486A57 /* businessbg.jpg */; };
+		5585D5CD1B8DC4A400DB7D3F /* newststand.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5585D5CC1B8DC4A400DB7D3F /* newststand.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5561F4BA1B8C3DC700486A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5561F49C1B8C3DC700486A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5561F4A31B8C3DC700486A57;
+			remoteInfo = MMGooglePlayNewsStand;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5561F4A41B8C3DC700486A57 /* MMGooglePlayNewsStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMGooglePlayNewsStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5561F4A81B8C3DC700486A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5561F4A91B8C3DC700486A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5561F4AB1B8C3DC700486A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5561F4AE1B8C3DC700486A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5561F4B01B8C3DC700486A57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5561F4B31B8C3DC700486A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5561F4B91B8C3DC700486A57 /* MMGooglePlayNewsStandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMGooglePlayNewsStandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5561F4BE1B8C3DC700486A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5561F4BF1B8C3DC700486A57 /* MMGooglePlayNewsStandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMGooglePlayNewsStandTests.swift; sourceTree = "<group>"; };
+		5561F4C91B8C3DF800486A57 /* MMPlayStandPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMPlayStandPageViewController.swift; sourceTree = "<group>"; };
+		5561F4CB1B8C3E7A00486A57 /* MMGooglePlayNewsStand-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMGooglePlayNewsStand-Bridging-Header.h"; sourceTree = "<group>"; };
+		5561F4CC1B8C3E7B00486A57 /* UIColor+HexRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexRepresentation.h"; sourceTree = "<group>"; };
+		5561F4CD1B8C3E7B00486A57 /* UIColor+HexRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexRepresentation.m"; sourceTree = "<group>"; };
+		5561F4CE1B8C3E7B00486A57 /* UIView+MaterialDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MaterialDesign.h"; sourceTree = "<group>"; };
+		5561F4CF1B8C3E7B00486A57 /* UIView+MaterialDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MaterialDesign.m"; sourceTree = "<group>"; };
+		5561F4D31B8C3EC300486A57 /* MMSampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMSampleTableViewController.swift; sourceTree = "<group>"; };
+		5561F4D61B8C448C00486A57 /* bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg@2x.jpg"; sourceTree = "<group>"; };
+		5561F4D81B8C44A100486A57 /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
+		5561F4D91B8C44A100486A57 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		5561F4DA1B8C44A100486A57 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		5561F4DF1B8C48A900486A57 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		5561F4E11B8C4DBD00486A57 /* JBKenBurnsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBKenBurnsView.h; sourceTree = "<group>"; };
+		5561F4E21B8C4DBD00486A57 /* JBKenBurnsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBKenBurnsView.m; sourceTree = "<group>"; };
+		5561F4E41B8C544E00486A57 /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sports.png; sourceTree = "<group>"; };
+		5561F4E61B8C546E00486A57 /* business.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = business.png; sourceTree = "<group>"; };
+		5561F4E81B8C548300486A57 /* tech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tech.png; sourceTree = "<group>"; };
+		5561F4EA1B8C54AB00486A57 /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
+		5561F4EC1B8C54C900486A57 /* world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world.png; sourceTree = "<group>"; };
+		5561F4F01B8C577A00486A57 /* highlights.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highlights.png; sourceTree = "<group>"; };
+		5561F4F21B8C617E00486A57 /* applebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applebg.png; sourceTree = "<group>"; };
+		5561F4F41B8C617E00486A57 /* sportsbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sportsbg.jpg; sourceTree = "<group>"; };
+		5561F4F51B8C617E00486A57 /* worldbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = worldbg.jpg; sourceTree = "<group>"; };
+		5561F4FA1B8C61D200486A57 /* ironman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ironman.jpg; sourceTree = "<group>"; };
+		5561F4FC1B8C771D00486A57 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		5561F4FE1B8C885600486A57 /* NewsCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCellTableViewCell.swift; sourceTree = "<group>"; };
+		5561F5001B8C911100486A57 /* businessbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = businessbg.jpg; sourceTree = "<group>"; };
+		5585D5CC1B8DC4A400DB7D3F /* newststand.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = newststand.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5561F4A11B8C3DC700486A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5561F4B61B8C3DC700486A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5561F49B1B8C3DC700486A57 = {
+			isa = PBXGroup;
+			children = (
+				5561F4A61B8C3DC700486A57 /* MMGooglePlayNewsStand */,
+				5561F4BC1B8C3DC700486A57 /* MMGooglePlayNewsStandTests */,
+				5561F4A51B8C3DC700486A57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5561F4A51B8C3DC700486A57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5561F4A41B8C3DC700486A57 /* MMGooglePlayNewsStand.app */,
+				5561F4B91B8C3DC700486A57 /* MMGooglePlayNewsStandTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5561F4A61B8C3DC700486A57 /* MMGooglePlayNewsStand */ = {
+			isa = PBXGroup;
+			children = (
+				5585D5CC1B8DC4A400DB7D3F /* newststand.gif */,
+				5561F4DE1B8C44A500486A57 /* Resources */,
+				5561F4D21B8C3E8400486A57 /* Model */,
+				5561F4A91B8C3DC700486A57 /* AppDelegate.swift */,
+				5561F4D51B8C408E00486A57 /* Controller */,
+				5561F4AD1B8C3DC700486A57 /* Main.storyboard */,
+				5561F4B01B8C3DC700486A57 /* Images.xcassets */,
+				5561F4B21B8C3DC700486A57 /* LaunchScreen.xib */,
+				5561F4A71B8C3DC700486A57 /* Supporting Files */,
+				5561F4CB1B8C3E7A00486A57 /* MMGooglePlayNewsStand-Bridging-Header.h */,
+			);
+			path = MMGooglePlayNewsStand;
+			sourceTree = "<group>";
+		};
+		5561F4A71B8C3DC700486A57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5561F4FC1B8C771D00486A57 /* Roboto-Medium.ttf */,
+				5561F4A81B8C3DC700486A57 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5561F4BC1B8C3DC700486A57 /* MMGooglePlayNewsStandTests */ = {
+			isa = PBXGroup;
+			children = (
+				5561F4BF1B8C3DC700486A57 /* MMGooglePlayNewsStandTests.swift */,
+				5561F4BD1B8C3DC700486A57 /* Supporting Files */,
+			);
+			path = MMGooglePlayNewsStandTests;
+			sourceTree = "<group>";
+		};
+		5561F4BD1B8C3DC700486A57 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5561F4BE1B8C3DC700486A57 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5561F4D21B8C3E8400486A57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5561F4E11B8C4DBD00486A57 /* JBKenBurnsView.h */,
+				5561F4E21B8C4DBD00486A57 /* JBKenBurnsView.m */,
+				5561F4CC1B8C3E7B00486A57 /* UIColor+HexRepresentation.h */,
+				5561F4CD1B8C3E7B00486A57 /* UIColor+HexRepresentation.m */,
+				5561F4CE1B8C3E7B00486A57 /* UIView+MaterialDesign.h */,
+				5561F4CF1B8C3E7B00486A57 /* UIView+MaterialDesign.m */,
+				5561F4FE1B8C885600486A57 /* NewsCellTableViewCell.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5561F4D51B8C408E00486A57 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5561F4AB1B8C3DC700486A57 /* ViewController.swift */,
+				5561F4C91B8C3DF800486A57 /* MMPlayStandPageViewController.swift */,
+				5561F4D31B8C3EC300486A57 /* MMSampleTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5561F4DE1B8C44A500486A57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5561F4FA1B8C61D200486A57 /* ironman.jpg */,
+				5561F4F21B8C617E00486A57 /* applebg.png */,
+				5561F4F41B8C617E00486A57 /* sportsbg.jpg */,
+				5561F5001B8C911100486A57 /* businessbg.jpg */,
+				5561F4F51B8C617E00486A57 /* worldbg.jpg */,
+				5561F4F01B8C577A00486A57 /* highlights.png */,
+				5561F4EC1B8C54C900486A57 /* world.png */,
+				5561F4EA1B8C54AB00486A57 /* movie.png */,
+				5561F4E81B8C548300486A57 /* tech.png */,
+				5561F4E61B8C546E00486A57 /* business.png */,
+				5561F4E41B8C544E00486A57 /* sports.png */,
+				5561F4DF1B8C48A900486A57 /* news.png */,
+				5561F4D61B8C448C00486A57 /* bg@2x.jpg */,
+				5561F4D81B8C44A100486A57 /* demo.png */,
+				5561F4D91B8C44A100486A57 /* menu.png */,
+				5561F4DA1B8C44A100486A57 /* search.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5561F4A31B8C3DC700486A57 /* MMGooglePlayNewsStand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5561F4C31B8C3DC700486A57 /* Build configuration list for PBXNativeTarget "MMGooglePlayNewsStand" */;
+			buildPhases = (
+				5561F4A01B8C3DC700486A57 /* Sources */,
+				5561F4A11B8C3DC700486A57 /* Frameworks */,
+				5561F4A21B8C3DC700486A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMGooglePlayNewsStand;
+			productName = MMGooglePlayNewsStand;
+			productReference = 5561F4A41B8C3DC700486A57 /* MMGooglePlayNewsStand.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5561F4B81B8C3DC700486A57 /* MMGooglePlayNewsStandTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5561F4C61B8C3DC700486A57 /* Build configuration list for PBXNativeTarget "MMGooglePlayNewsStandTests" */;
+			buildPhases = (
+				5561F4B51B8C3DC700486A57 /* Sources */,
+				5561F4B61B8C3DC700486A57 /* Frameworks */,
+				5561F4B71B8C3DC700486A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5561F4BB1B8C3DC700486A57 /* PBXTargetDependency */,
+			);
+			name = MMGooglePlayNewsStandTests;
+			productName = MMGooglePlayNewsStandTests;
+			productReference = 5561F4B91B8C3DC700486A57 /* MMGooglePlayNewsStandTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5561F49C1B8C3DC700486A57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = madapps;
+				TargetAttributes = {
+					5561F4A31B8C3DC700486A57 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					5561F4B81B8C3DC700486A57 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 5561F4A31B8C3DC700486A57;
+					};
+				};
+			};
+			buildConfigurationList = 5561F49F1B8C3DC700486A57 /* Build configuration list for PBXProject "MMGooglePlayNewsStand" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5561F49B1B8C3DC700486A57;
+			productRefGroup = 5561F4A51B8C3DC700486A57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5561F4A31B8C3DC700486A57 /* MMGooglePlayNewsStand */,
+				5561F4B81B8C3DC700486A57 /* MMGooglePlayNewsStandTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5561F4A21B8C3DC700486A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5561F4FD1B8C7B5300486A57 /* Roboto-Medium.ttf in Resources */,
+				5561F4E91B8C548300486A57 /* tech.png in Resources */,
+				5561F4AF1B8C3DC700486A57 /* Main.storyboard in Resources */,
+				5561F4F91B8C617E00486A57 /* worldbg.jpg in Resources */,
+				5561F4DB1B8C44A100486A57 /* demo.png in Resources */,
+				5561F4DC1B8C44A100486A57 /* menu.png in Resources */,
+				5561F4ED1B8C54C900486A57 /* world.png in Resources */,
+				5561F4E01B8C48A900486A57 /* news.png in Resources */,
+				5561F4E71B8C546E00486A57 /* business.png in Resources */,
+				5561F4DD1B8C44A100486A57 /* search.png in Resources */,
+				5561F4E51B8C544E00486A57 /* sports.png in Resources */,
+				5561F4F61B8C617E00486A57 /* applebg.png in Resources */,
+				5561F4FB1B8C61D200486A57 /* ironman.jpg in Resources */,
+				5561F4B41B8C3DC700486A57 /* LaunchScreen.xib in Resources */,
+				5561F4B11B8C3DC700486A57 /* Images.xcassets in Resources */,
+				5561F4D71B8C448C00486A57 /* bg@2x.jpg in Resources */,
+				5561F4F11B8C577A00486A57 /* highlights.png in Resources */,
+				5561F4F81B8C617E00486A57 /* sportsbg.jpg in Resources */,
+				5561F5011B8C911100486A57 /* businessbg.jpg in Resources */,
+				5561F4EB1B8C54AB00486A57 /* movie.png in Resources */,
+				5585D5CD1B8DC4A400DB7D3F /* newststand.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5561F4B71B8C3DC700486A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5561F4A01B8C3DC700486A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5561F4AC1B8C3DC700486A57 /* ViewController.swift in Sources */,
+				5561F4AA1B8C3DC700486A57 /* AppDelegate.swift in Sources */,
+				5561F4D01B8C3E7B00486A57 /* UIColor+HexRepresentation.m in Sources */,
+				5561F4E31B8C4DBD00486A57 /* JBKenBurnsView.m in Sources */,
+				5561F4CA1B8C3DF800486A57 /* MMPlayStandPageViewController.swift in Sources */,
+				5561F4D11B8C3E7B00486A57 /* UIView+MaterialDesign.m in Sources */,
+				5561F4FF1B8C885600486A57 /* NewsCellTableViewCell.swift in Sources */,
+				5561F4D41B8C3EC300486A57 /* MMSampleTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5561F4B51B8C3DC700486A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5561F4C01B8C3DC700486A57 /* MMGooglePlayNewsStandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5561F4BB1B8C3DC700486A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5561F4A31B8C3DC700486A57 /* MMGooglePlayNewsStand */;
+			targetProxy = 5561F4BA1B8C3DC700486A57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5561F4AD1B8C3DC700486A57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5561F4AE1B8C3DC700486A57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5561F4B21B8C3DC700486A57 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5561F4B31B8C3DC700486A57 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5561F4C11B8C3DC700486A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5561F4C21B8C3DC700486A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5561F4C41B8C3DC700486A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = MMGooglePlayNewsStand/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MMGooglePlayNewsStand/MMGooglePlayNewsStand-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5561F4C51B8C3DC700486A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = MMGooglePlayNewsStand/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MMGooglePlayNewsStand/MMGooglePlayNewsStand-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		5561F4C71B8C3DC700486A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MMGooglePlayNewsStandTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMGooglePlayNewsStand.app/MMGooglePlayNewsStand";
+			};
+			name = Debug;
+		};
+		5561F4C81B8C3DC700486A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MMGooglePlayNewsStandTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMGooglePlayNewsStand.app/MMGooglePlayNewsStand";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5561F49F1B8C3DC700486A57 /* Build configuration list for PBXProject "MMGooglePlayNewsStand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5561F4C11B8C3DC700486A57 /* Debug */,
+				5561F4C21B8C3DC700486A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5561F4C31B8C3DC700486A57 /* Build configuration list for PBXNativeTarget "MMGooglePlayNewsStand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5561F4C41B8C3DC700486A57 /* Debug */,
+				5561F4C51B8C3DC700486A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5561F4C61B8C3DC700486A57 /* Build configuration list for PBXNativeTarget "MMGooglePlayNewsStandTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5561F4C71B8C3DC700486A57 /* Debug */,
+				5561F4C81B8C3DC700486A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5561F49C1B8C3DC700486A57 /* Project object */;
+}

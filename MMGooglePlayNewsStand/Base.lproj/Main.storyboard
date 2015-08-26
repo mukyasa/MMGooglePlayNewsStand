@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="MMGooglePlayNewsStand" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEw-VB-h1u">
+                                <rect key="frame" x="260" y="260" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="O2R-Nx-n2a"/>
+                                    <constraint firstAttribute="height" constant="80" id="SCs-Lk-tbJ"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDemoAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xtG-m8-phg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is Demo to mock Google Play NewStand app.Tap Below To see the DEMO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfV-dg-j3B">
+                                <rect key="frame" x="160" y="28" width="280" height="158"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="9m9-ox-f3Z"/>
+                                    <constraint firstAttribute="height" constant="158" id="z11-ww-YqW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="nEw-VB-h1u" secondAttribute="centerY" id="6VV-3u-Z0B"/>
+                            <constraint firstAttribute="centerX" secondItem="nEw-VB-h1u" secondAttribute="centerX" id="AAN-yw-NE3"/>
+                            <constraint firstAttribute="centerX" secondItem="WfV-dg-j3B" secondAttribute="centerX" id="L9o-Ix-w3s"/>
+                            <constraint firstItem="WfV-dg-j3B" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="er4-DB-4z1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showDemoBut" destination="nEw-VB-h1u" id="mtM-T4-GvT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="430"/>
+        </scene>
+        <!--Sample Table View Controller-->
+        <scene sceneID="ERe-Fc-9Vh">
+            <objects>
+                <viewController storyboardIdentifier="stand_one" id="woN-AD-JVC" customClass="MMSampleTableViewController" customModule="MMGooglePlayNewsStand" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fQT-PK-X7j"/>
+                        <viewControllerLayoutGuide type="bottom" id="dCL-UE-TPH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tSO-6D-Af8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="320" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PmO-WX-17k">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="320" id="fEP-2N-NVP" customClass="NewsCellTableViewCell" customModule="MMGooglePlayNewsStand" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fEP-2N-NVP" id="aNU-RL-zjH">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nc-Hg-t1K">
+                                                    <rect key="frame" x="16" y="16" width="568" height="288"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BPB-r5-ffQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="568" height="200"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="200" id="VRV-bk-vYm"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9r2-5L-aQk">
+                                                            <rect key="frame" x="16" y="208" width="552" height="35"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="mYg-NJ-05G"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugS-pv-8HB">
+                                                            <rect key="frame" x="16" y="251" width="552" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="Eg9-Bc-Tdr"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="BPB-r5-ffQ" firstAttribute="top" secondItem="8nc-Hg-t1K" secondAttribute="top" id="A0d-pf-OAm"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ugS-pv-8HB" secondAttribute="trailing" id="Kha-iO-uhb"/>
+                                                        <constraint firstItem="BPB-r5-ffQ" firstAttribute="leading" secondItem="8nc-Hg-t1K" secondAttribute="leading" id="KoW-uy-FG5"/>
+                                                        <constraint firstItem="ugS-pv-8HB" firstAttribute="leading" secondItem="8nc-Hg-t1K" secondAttribute="leading" constant="16" id="NoQ-rO-gUG"/>
+                                                        <constraint firstAttribute="trailing" secondItem="9r2-5L-aQk" secondAttribute="trailing" id="XFL-aH-eEL"/>
+                                                        <constraint firstItem="9r2-5L-aQk" firstAttribute="top" secondItem="BPB-r5-ffQ" secondAttribute="bottom" constant="8" id="jFr-Fk-i1z"/>
+                                                        <constraint firstItem="ugS-pv-8HB" firstAttribute="top" secondItem="9r2-5L-aQk" secondAttribute="bottom" constant="8" id="vFt-aL-0i0"/>
+                                                        <constraint firstItem="9r2-5L-aQk" firstAttribute="leading" secondItem="8nc-Hg-t1K" secondAttribute="leading" constant="16" id="vQa-0K-lYH"/>
+                                                        <constraint firstAttribute="trailing" secondItem="BPB-r5-ffQ" secondAttribute="trailing" id="xJs-a3-bhj"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="8nc-Hg-t1K" firstAttribute="top" secondItem="aNU-RL-zjH" secondAttribute="top" constant="16" id="2NL-Ma-pft"/>
+                                                <constraint firstItem="8nc-Hg-t1K" firstAttribute="leading" secondItem="aNU-RL-zjH" secondAttribute="leading" constant="16" id="BT2-cd-IgB"/>
+                                                <constraint firstAttribute="trailing" secondItem="8nc-Hg-t1K" secondAttribute="trailing" constant="16" id="NS8-Uo-iug"/>
+                                                <constraint firstAttribute="bottom" secondItem="8nc-Hg-t1K" secondAttribute="bottom" constant="16" id="wIN-Y6-7SV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="descNews" destination="ugS-pv-8HB" id="Cm7-Zs-C7s"/>
+                                            <outlet property="headerImage" destination="BPB-r5-ffQ" id="Llf-ff-pZ8"/>
+                                            <outlet property="middleView" destination="8nc-Hg-t1K" id="sMH-zt-r3a"/>
+                                            <outlet property="titleNews" destination="9r2-5L-aQk" id="Xtk-4L-DTA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="woN-AD-JVC" id="wRy-ha-Vct"/>
+                                    <outlet property="delegate" destination="woN-AD-JVC" id="TbU-w2-HLs"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dCL-UE-TPH" firstAttribute="top" secondItem="PmO-WX-17k" secondAttribute="bottom" id="BPl-ng-fvN"/>
+                            <constraint firstItem="PmO-WX-17k" firstAttribute="top" secondItem="tSO-6D-Af8" secondAttribute="top" id="EHX-WL-BMu"/>
+                            <constraint firstItem="PmO-WX-17k" firstAttribute="leading" secondItem="tSO-6D-Af8" secondAttribute="leading" id="aBa-H3-JCo"/>
+                            <constraint firstAttribute="trailing" secondItem="PmO-WX-17k" secondAttribute="trailing" id="yTv-0E-Yrf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="PmO-WX-17k" id="leA-JD-Qds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZZg-k3-9cV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="-255"/>
+        </scene>
+        <!--Play Stand Page View Controller-->
+        <scene sceneID="TXD-je-B5T">
+            <objects>
+                <viewController storyboardIdentifier="playstand" id="L9m-NM-laV" customClass="MMPlayStandPageViewController" customModule="MMGooglePlayNewsStand" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DZv-Lu-mtx"/>
+                        <viewControllerLayoutGuide type="bottom" id="rc6-4J-o7h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fy8-cX-26A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SuH-dc-z6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="-255"/>
+        </scene>
+    </scenes>
+</document>
