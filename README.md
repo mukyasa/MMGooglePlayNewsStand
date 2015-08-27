@@ -11,6 +11,9 @@ To Simulate iOS Google Play NewsStand app
 
 **My Other Repositories**
 
+**MMCamScanner:**<br />
+https://github.com/mukyasa/MMCamScanner<br />
+
 **MMPaper:**<br />
 https://github.com/mukyasa/MMPaper<br />
 
@@ -22,7 +25,6 @@ https://github.com/mukyasa/MMPaperPanFlip<br />
 
 **MMTransitionEffect:**<br />
 https://github.com/mukyasa/MMTransitionEffect<br />
-
 
 Contact Me
 ==========
