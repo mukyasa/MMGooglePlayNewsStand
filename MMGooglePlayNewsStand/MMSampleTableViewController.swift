@@ -12,7 +12,7 @@ import UIKit
     
     @objc optional func scrollYAxis(offset:CGFloat , translation:CGPoint)              // If the skipRequest(sender:) action is connected to a button, this function is called when that button is pressed.
     
-    
+    @objc optional func getframeindexpathOfController()->CGRect
 }
 
 class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,MMPlayPageScroll ,UIScrollViewDelegate{
@@ -22,11 +22,15 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
     let headerImage: UIImageView!
     var trans:CGPoint
     var imageArr:[UIImage]!
+    var transitionManager : TransitionModel!
+    var preventAnimation = Set<NSIndexPath>()
     
     //     weak var scrolldelegate:scrolldelegateForYAxis?
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     var tag = 0 as Int
     override func viewDidLoad() {
+        
+        transitionManager = TransitionModel()
         super.viewDidLoad()
         self.tableView.delegate=self;
         self.tableView.dataSource=self;
@@ -129,6 +133,13 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         return 1;
     }
     
+     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if !preventAnimation.contains(indexPath) {
+            preventAnimation.insert(indexPath)
+            TipInCellAnimator.animate(cell)
+        }
+    }
+    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
@@ -140,6 +151,16 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         cell.headerImage.image=imageArr[indexPath.row]
         
         return cell
+    }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let detail = self.storyboard?.instantiateViewControllerWithIdentifier("detail") as! DetailViewController
+        detail.modalPresentationStyle = UIModalPresentationStyle.Custom;
+        detail.transitioningDelegate = transitionManager;
+        appDelegate.walkthrough?.presentViewController(detail, animated: true, completion: nil)
+//        self.presentViewController(detail, animated: true, completion: nil)
+
     }
     
     //MARK:  - Scroll delegate

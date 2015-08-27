@@ -36,6 +36,11 @@
 		5561F4FD1B8C7B5300486A57 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5561F4FC1B8C771D00486A57 /* Roboto-Medium.ttf */; };
 		5561F4FF1B8C885600486A57 /* NewsCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5561F4FE1B8C885600486A57 /* NewsCellTableViewCell.swift */; };
 		5561F5011B8C911100486A57 /* businessbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5561F5001B8C911100486A57 /* businessbg.jpg */; };
+		557F66A91B8EDB240033E4A6 /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F66A81B8EDB240033E4A6 /* TransitionModel.swift */; };
+		557F66AB1B8EDC810033E4A6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F66AA1B8EDC810033E4A6 /* DetailViewController.swift */; };
+		557F66AD1B8EE9750033E4A6 /* UITableView+Frames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F66AC1B8EE9750033E4A6 /* UITableView+Frames.swift */; };
+		557F66B11B8F02D80033E4A6 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 557F66B01B8F02D80033E4A6 /* back.png */; };
+		557F66B51B8F1E5A0033E4A6 /* TipInCellAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F66B41B8F1E5A0033E4A6 /* TipInCellAnimator.swift */; };
 		5585D5CD1B8DC4A400DB7D3F /* newststand.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5585D5CC1B8DC4A400DB7D3F /* newststand.gif */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +92,11 @@
 		5561F4FC1B8C771D00486A57 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		5561F4FE1B8C885600486A57 /* NewsCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCellTableViewCell.swift; sourceTree = "<group>"; };
 		5561F5001B8C911100486A57 /* businessbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = businessbg.jpg; sourceTree = "<group>"; };
+		557F66A81B8EDB240033E4A6 /* TransitionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
+		557F66AA1B8EDC810033E4A6 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		557F66AC1B8EE9750033E4A6 /* UITableView+Frames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Frames.swift"; sourceTree = "<group>"; };
+		557F66B01B8F02D80033E4A6 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		557F66B41B8F1E5A0033E4A6 /* TipInCellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipInCellAnimator.swift; sourceTree = "<group>"; };
 		5585D5CC1B8DC4A400DB7D3F /* newststand.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = newststand.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +182,7 @@
 		5561F4D21B8C3E8400486A57 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				557F66A81B8EDB240033E4A6 /* TransitionModel.swift */,
 				5561F4E11B8C4DBD00486A57 /* JBKenBurnsView.h */,
 				5561F4E21B8C4DBD00486A57 /* JBKenBurnsView.m */,
 				5561F4CC1B8C3E7B00486A57 /* UIColor+HexRepresentation.h */,
@@ -179,6 +190,8 @@
 				5561F4CE1B8C3E7B00486A57 /* UIView+MaterialDesign.h */,
 				5561F4CF1B8C3E7B00486A57 /* UIView+MaterialDesign.m */,
 				5561F4FE1B8C885600486A57 /* NewsCellTableViewCell.swift */,
+				557F66AC1B8EE9750033E4A6 /* UITableView+Frames.swift */,
+				557F66B41B8F1E5A0033E4A6 /* TipInCellAnimator.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -189,6 +202,7 @@
 				5561F4AB1B8C3DC700486A57 /* ViewController.swift */,
 				5561F4C91B8C3DF800486A57 /* MMPlayStandPageViewController.swift */,
 				5561F4D31B8C3EC300486A57 /* MMSampleTableViewController.swift */,
+				557F66AA1B8EDC810033E4A6 /* DetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -196,6 +210,7 @@
 		5561F4DE1B8C44A500486A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				557F66B01B8F02D80033E4A6 /* back.png */,
 				5561F4FA1B8C61D200486A57 /* ironman.jpg */,
 				5561F4F21B8C617E00486A57 /* applebg.png */,
 				5561F4F41B8C617E00486A57 /* sportsbg.jpg */,
@@ -317,6 +332,7 @@
 				5561F5011B8C911100486A57 /* businessbg.jpg in Resources */,
 				5561F4EB1B8C54AB00486A57 /* movie.png in Resources */,
 				5585D5CD1B8DC4A400DB7D3F /* newststand.gif in Resources */,
+				557F66B11B8F02D80033E4A6 /* back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,11 +351,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5561F4AC1B8C3DC700486A57 /* ViewController.swift in Sources */,
+				557F66B51B8F1E5A0033E4A6 /* TipInCellAnimator.swift in Sources */,
 				5561F4AA1B8C3DC700486A57 /* AppDelegate.swift in Sources */,
+				557F66AD1B8EE9750033E4A6 /* UITableView+Frames.swift in Sources */,
 				5561F4D01B8C3E7B00486A57 /* UIColor+HexRepresentation.m in Sources */,
 				5561F4E31B8C4DBD00486A57 /* JBKenBurnsView.m in Sources */,
 				5561F4CA1B8C3DF800486A57 /* MMPlayStandPageViewController.swift in Sources */,
 				5561F4D11B8C3E7B00486A57 /* UIView+MaterialDesign.m in Sources */,
+				557F66A91B8EDB240033E4A6 /* TransitionModel.swift in Sources */,
+				557F66AB1B8EDC810033E4A6 /* DetailViewController.swift in Sources */,
 				5561F4FF1B8C885600486A57 /* NewsCellTableViewCell.swift in Sources */,
 				5561F4D41B8C3EC300486A57 /* MMSampleTableViewController.swift in Sources */,
 			);
@@ -468,8 +488,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MMGooglePlayNewsStand/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MMGooglePlayNewsStand/MMGooglePlayNewsStand-Bridging-Header.h";
@@ -481,8 +503,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MMGooglePlayNewsStand/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MMGooglePlayNewsStand/MMGooglePlayNewsStand-Bridging-Header.h";

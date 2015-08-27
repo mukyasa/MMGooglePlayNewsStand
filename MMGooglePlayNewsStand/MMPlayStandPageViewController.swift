@@ -276,7 +276,7 @@ At the moment it's only used to perform custom animations on didScroll.
         
         createHorizontalScroller()
         currentColor=colors[0]
-        self.bannerAlpha.mdInflateAnimatedFromPoint(CGPointMake(self.bannerImage.center.x , self.bannerImage.center.y), backgroundColor: self.currentColor, duration: 0.4, completion: nil)
+        self.bannerAlpha.mdInflateAnimatedFromPoint(CGPointMake(self.bannerImage.center.x , self.bannerImage.center.y), backgroundColor: self.currentColor, duration: 0.6, completion: nil)
         var images :[UIImage]!
         images=Array()
         images.append(UIImage(named: "ironman.jpg")!)
@@ -323,13 +323,12 @@ At the moment it's only used to perform custom animations on didScroll.
             })
             
         }
-        self.bannerAlpha.mdInflateAnimatedFromPoint(CGPointMake(self.bannerImage.center.x , self.bannerImage.center.y), backgroundColor: self.currentColor, duration: 0.4, completion: nil)
+        self.bannerAlpha.mdInflateAnimatedFromPoint(CGPointMake(self.bannerImage.center.x , self.bannerImage.center.y), backgroundColor: self.currentColor, duration: 0.6, completion: nil)
     }
     
     /**
     addViewController
-    Add a new page to the walkthrough.
-    To have information about the current position of the page in the walkthrough add a UIVIewController which implements BWWalkthroughPage
+   
     */
     func addViewController(vc:UIViewController)->Void{
         
@@ -459,7 +458,7 @@ At the moment it's only used to perform custom animations on didScroll.
             })
             
         }
-        self.bannerAlpha.mdInflateAnimatedFromPoint(CGPointMake(self.bannerImage.center.x , self.bannerImage.center.y), backgroundColor: self.currentColor, duration: 0.4, completion: nil)
+        self.bannerAlpha.mdInflateAnimatedFromPoint(CGPointMake(self.bannerImage.center.x , self.bannerImage.center.y), backgroundColor: self.currentColor, duration: 0.6, completion: nil)
         
         
         
@@ -586,12 +585,18 @@ At the moment it's only used to perform custom animations on didScroll.
                         horiScrollTransform=CATransform3DTranslate(horiScrollTransform, 0, -offset, 0)
                         horiScroll.layer.transform=horiScrollTransform
                         
-                        
+                        let x = bannerImage.frame.origin.x
+                        let w = bannerImage.bounds.width
+                        let h = bannerImage.bounds.height
+                        var y = -((offset - bannerImage.frame.origin.y) / 75) * 25
                         imageTransform=CATransform3DTranslate(imageTransform, 0, -offset, 0)
                         
-                        bannerImage.layer.transform=imageTransform
-                        bannerAlpha.layer.transform=imageTransform
-                        bannerThin.layer.transform=imageTransform
+                        bannerImage.frame = CGRectMake(x, y, w, h)
+                         bannerAlpha.frame = CGRectMake(x, y, w, h)
+                         bannerThin.frame = CGRectMake(x, y, w, h)
+//                        bannerImage.layer.transform=imageTransform
+//                        bannerAlpha.layer.transform=imageTransform
+//                        bannerThin.layer.transform=imageTransform
                         if(offset > 100){
                             showStatus =  true
                             setNeedsStatusBarAppearanceUpdate()
@@ -614,7 +619,11 @@ At the moment it's only used to perform custom animations on didScroll.
         lastOffset=offset
         
     }
-    
+    func getframeindexpathOfController()-> CGRect{
+         let temp = controllers[currentPage] as! MMSampleTableViewController
+        
+        return temp.tableView.framesForRowAtIndexPath(temp.tableView.indexPathForSelectedRow()!)
+    }
     
 }
 
