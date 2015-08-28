@@ -26,7 +26,7 @@ class TransitionModel: NSObject , UIViewControllerAnimatedTransitioning , UIView
             toVC.view.alpha=0
             transitionContext.containerView().addSubview(toVC.view)
             
-            let snapshot = UIView()
+            var snapshot = UIView()
             snapshot.backgroundColor=UIColor.whiteColor()
 //            snapshot.frame = fromVC.tableView.framesForRowAtIndexPath(fromVC.tableView.indexPathForSelectedRow()!)
             snapshot.frame = fromVC.getframeindexpathOfController()
@@ -37,16 +37,16 @@ class TransitionModel: NSObject , UIViewControllerAnimatedTransitioning , UIView
             
             UIView.animateWithDuration(0.5, animations: { () -> Void in
                 
-                toVC.view.alpha=1
+                
                 snapshot.frame = fromVC.view.frame
                 
                 
             }, completion: { (Bool) -> Void in
                 UIView.animateWithDuration(0.2, animations: { () -> Void in
+                    toVC.view.alpha=1
                     
-                    snapshot.alpha=0;
                 }, completion: { (Bool) -> Void in
-                    
+                    snapshot.alpha=0;
                     snapshot.removeFromSuperview()
                 })
                 
