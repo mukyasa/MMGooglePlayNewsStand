@@ -1,6 +1,9 @@
 # MMGooglePlayNewsStand
 To Simulate iOS Google Play NewsStand app
 
+####Appstore Link of Google Play Newsstand app
+https://itunes.apple.com/in/app/google-play-newsstand/id459182288?mt=8
+
 #### Video preview [Here](https://www.youtube.com/watch?v=WdfkO9LnPkg)
 
 ##Demo
