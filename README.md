@@ -16,11 +16,11 @@ https://itunes.apple.com/in/app/google-play-newsstand/id459182288?mt=8
 
 **My Other Repositories**
 
-**MMCamScanner:**<br />
-https://github.com/mukyasa/MMCamScanner<br />
-
 **MMPaper:**<br />
 https://github.com/mukyasa/MMPaper<br />
+
+**MMCamScanner:**<br />
+https://github.com/mukyasa/MMCamScanner<br />
 
 **MMTextFieldEffects:**<br />
 https://github.com/mukyasa/MMTextFieldEffects<br />
