@@ -62,7 +62,7 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
         
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         header=UIView()
         headerImage=UIImageView()
         headerImage.backgroundColor=UIColor(hexString: "109B96")
@@ -146,7 +146,7 @@ class MMSampleTableViewController: UIViewController,UITableViewDataSource,UITabl
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:NewsCellTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! NewsCellTableViewCell
+        let cell:NewsCellTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! NewsCellTableViewCell
         
         cell.headerImage.image=imageArr[indexPath.row]
         

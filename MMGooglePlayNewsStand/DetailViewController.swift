@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
         textHeightConstraint.constant = 450
         
         
-        let navBut = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+        let navBut = UIButton(type: UIButtonType.System)
         let navTitle = UILabel()
         navBar.frame=CGRectMake(0, 0, self.view.bounds.width, 64)
         navBut.frame=CGRectMake(0, 16, 45, 45)
