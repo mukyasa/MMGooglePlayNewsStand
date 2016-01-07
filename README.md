@@ -1,5 +1,6 @@
 # MMGooglePlayNewsStand
 To Simulate iOS Google Play NewsStand app
+#### Objective-C Version release soon on this jan month
 
 ####Appstore Link of Google Play Newsstand app
 https://itunes.apple.com/in/app/google-play-newsstand/id459182288?mt=8
