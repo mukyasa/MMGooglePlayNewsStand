@@ -1,6 +1,10 @@
 # MMGooglePlayNewsStand
 To Simulate iOS Google Play NewsStand app
-#### Objective-C Version release soon on this jan month
+
+
+####Objective-C Version released 
+
+##### So Finally i was able to make Objective-C version of this, Sorry For Delay My Friends, Got lot of request for this so thought of doing this for my community friends.Feel free to use an integrate it in your project.If you look in to project i have made Objective code much cleaner and easy to use compare to Swift.Future work will be making the swift code more simple and cleaner.I will suggest to use the ObjCPlayStand in your project because Swift code is not a plug and play type, But with help of Bridging header you can use it easily.Check for demo how to use it both in Objective-C/Swift.
 
 ####Appstore Link of Google Play Newsstand app
 https://itunes.apple.com/in/app/google-play-newsstand/id459182288?mt=8
@@ -14,36 +18,7 @@ https://itunes.apple.com/in/app/google-play-newsstand/id459182288?mt=8
 
 ##How To Setup
 
-* Drag a View Controller and subclass it with ```MMPlayStandPageViewController```
-![MMGooglePlayNewsStand](https://github.com/mukyasa/MMGooglePlayNewsStand/blob/master/MMGooglePlayNewsStand/Screen Shot 2015-09-21 at 1.54.27 pm.png)<br />
 
-* In ```AppDelegate``` file instantiate the ```MMPlayStandPageViewController```<br />
-
-```
-var walkthrough:MMPlayStandPageViewController?
-func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        walkthrough = main.instantiateViewControllerWithIdentifier("playstand") as? MMPlayStandPageViewController
-        return true
-        }
-   ``` 
-
-* Add ViewControllers to  ```MMPlayStandPageViewController``` by calling ```func addViewControllerWithTitleandColor(vc:UIViewController , title:NSString , color:UIColor)->Void```<br />
-
-
-```
-let stb = UIStoryboard(name: "Main", bundle: nil)
-let page_zero = stb.instantiateViewControllerWithIdentifier("stand_one") as! MMSampleTableViewController
-walkthrough?.addViewControllerWithTitleandColor(page_zero, title: "Highlights", color: UIColor(hexString: "9c27b0"))
-walkthrough?.addViewControllerWithTitleandColor(page_one, title: "Sports", color:UIColor(hexString: "009688"))
-walkthrough?.addViewControllerWithTitleandColor(page_two, title: "Entertainment", color:UIColor(hexString: "673ab7"))
-walkthrough?.addViewControllerWithTitleandColor(page_three, title: "Technology", color: UIColor(hexString: "ff9800"))
-walkthrough?.addViewControllerWithTitleandColor(page_four, title: "Business", color: UIColor(hexString: "03a9f4"))
-walkthrough?.addViewControllerWithTitleandColor(page_five, title: "World", color: UIColor(hexString: "4caf50"))
-```
-
-<br />
 ####Credits
 * JBKenBurns (https://github.com/jberlana/JBKenBurns) for KenBurns Effect
 * ios-material-design (https://github.com/moqod/ios-material-design) for Ripple Effect
