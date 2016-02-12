@@ -161,3 +161,7 @@ Twitter: http://twitter.com/mandymuku
 LinkedIn: https://in.linkedin.com/in/mukeshmandora
 
 Github:https://github.com/mukyasa
+
+
+## License
+MMGooglePlayNewsStand is available under the Apache license. See the LICENSE file for more info.
