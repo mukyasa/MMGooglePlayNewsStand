@@ -1,8 +1,11 @@
 # MMGooglePlayNewsStand
 To Simulate iOS Google Play NewsStand app
 
+## :warning: Announcement :warning:
+Swift Example and pods integration is underway
 
-####Objective-C Version released 
+
+#### Objective-C Version released 
 
 ##### So Finally i was able to make Objective-C version of this, Sorry For Delay My Friends, Got lot of request for this so thought of doing this for my community friends.Feel free to use an integrate it in your project.If you look in to project i have made Objective code much cleaner and easy to use compare to Swift.Future work will be making the swift code more simple and cleaner.I will suggest to use the ObjCPlayStand in your project because Swift code is not a plug and play type, But with help of Bridging header you can use it easily.Check for demo how to use it both in Objective-C/Swift.
 
